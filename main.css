@@ -1,47 +1,97 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500");
 body {
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: url("images/bg-image-min.jpg") no-repeat fixed top/cover;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.24);
+  margin: 0 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+.hero__content {
+  background: rgba(18, 154, 220, 0.75);
+  color: #fff;
+  padding: 2.5rem 2rem 4rem;
+  position: relative;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 20;
 }
 
 .profile {
-  background: #129ADC;
-  color: #fff;
-  box-shadow: 5px 12px 15px 0 rgba(0, 0, 0, 0.24);
-  margin: 2rem auto 0;
-  max-width: 30rem;
-  padding: 2rem;
+  font-size: 1rem;
+  margin: auto;
+  max-width: 29rem;
+  text-align: center;
+}
+.profile__photo {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1em black;
+  display: inline-block;
+  height: 6em;
+  margin: 1rem 0;
+  width: 6em;
+}
+.profile__photo img {
+  border-radius: 50%;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: -1;
 }
 .profile__description {
   font-size: 1.45em;
   font-weight: 300;
-  line-height: 1.3;
-  margin: 0;
-  padding: 0;
-  text-align: left;
 }
-.profile .social {
+.profile__description strong {
+  font-weight: 500;
+}
+
+.social {
   display: block;
   list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
+  margin: 1.25rem auto 0;
+  max-width: 29rem;
+  padding: 1rem 0 0;
   text-align: center;
 }
-.profile .social li {
+.social li {
   display: inline-block;
 }
-.profile .social li + li {
+.social li + li {
   margin-left: 0.25rem;
 }
-.profile .social__icon {
+.social__icon {
   background-color: transparent;
-  color: #fff;
+  color: #444;
   display: block;
-  fill: #fff;
-  height: 3em;
-  width: 3em;
+  fill: #444;
+  height: 4em;
+  width: 4em;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
-.profile .social__icon svg, .profile .social__icon img {
+.social__icon:hover {
+  color: #000;
+  fill: #000;
+}
+.social__icon svg, .social__icon img {
   width: 100%;
   height: 100%;
+}
+
+.coming-soon {
+  color: #444;
+  cursor: default;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 2.5rem auto 1rem;
+  max-width: 15rem;
+  padding: 0.8rem;
+  text-align: center;
 }
